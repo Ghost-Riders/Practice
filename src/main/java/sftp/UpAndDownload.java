@@ -1,7 +1,10 @@
 package sftp;
 
 import java.io.File;
+import java.util.Date;
 import java.util.Iterator;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.Vector;
 
 import com.jcraft.jsch.ChannelSftp;
@@ -28,14 +31,14 @@ public class UpAndDownload {
 		try {
 			jsch.addIdentity(pkey, keypass);
 		} catch (JSchException e) {
-			System.out.println("Private Key and Password Error"+e);
+			System.out.println("Private Key and Password Error" + e);
 		}
 		try {
 			jsch.setKnownHosts(pkey);
 		} catch (JSchException e) {
-			System.out.println("UnkownHosts Key Error : "+e);
+			System.out.println("UnkownHosts Key Error : " + e);
 		}
-		Session jschSession=null;
+		Session jschSession = null;
 		try {
 			jschSession = jsch.getSession(username, remoteHost, port);
 		} catch (JSchException e) {
@@ -108,7 +111,30 @@ public class UpAndDownload {
 	}
 
 	public static void main(String[] args) throws JSchException, SftpException {
-		whenUploadFileUsingJsch_thenSuccess();
+		givenUsingTimer_whenSchedulingDailyTask_thenCorrect();
 //		whenDownloadFileUsingJsch_thenSuccess();
+	}
+
+	public static void givenUsingTimer_whenSchedulingDailyTask_thenCorrect() {
+		TimerTask repeatedTask = new TimerTask() {
+			public void run() {
+				System.out.println("Task performed on " + new Date());
+				try {
+					whenUploadFileUsingJsch_thenSuccess();
+				} catch (JSchException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (SftpException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			}
+		};
+		Timer timer = new Timer("Timer");
+
+		long delay = 60000L;
+		long period = 1000L * 60L * 60L * 24L;
+		// timer.schedule(repeatedTask, firstTime, period);
 	}
 }
