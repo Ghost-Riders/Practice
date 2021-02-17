@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SBIEPAY schemaId="02910501223012021">
+	<ORDD>
+		<ORD>
+			<ATRN>5873119253601</ATRN>
+			<SN>NA</SN>
+			<SDT>NA</SDT>
+			<MID>1000356</MID>
+			<MN>multiAccountPayout2</MN>
+			<MORDN>2252021/000054</MORDN>
+			<ORDBDT>20-01-2021 12:19:30</ORDBDT>
+			<ORDAMT>8000.00</ORDAMT>
+			<ORDCY>INR</ORDCY>
+			<PMC>Net Banking</PMC>
+			<GNM>SBIePay Test Bank</GNM>
+			<GTN>000071581</GTN>
+			<PAYPROC>Self</PAYPROC>
+			<SAMT>NA</SAMT>
+			<SCY>NA</SCY>
+			<COM>8.50</COM>
+			<GST>1.53</GST>
+			<ORDSTS>SUCCESS</ORDSTS>
+			<STSDES>Payment In Clearing</STSDES>
+			<PAYAMT>NA</PAYAMT>
+			<OD>2~2~2~10</OD>
+		</ORD>
+		<ORD>
+			<ATRN>5873119253601</ATRN>
+			<SN>NA</SN>
+			<SDT>NA</SDT>
+			<MID>1000356</MID>
+			<MN>multiAccountPayout2</MN>
+			<MORDN>2252021/000054</MORDN>
+			<ORDBDT>20-01-2021 12:19:30</ORDBDT>
+			<ORDAMT>8000.00</ORDAMT>
+			<ORDCY>INR</ORDCY>
+			<PMC>Net Banking</PMC>
+			<GNM>SBIePay Test Bank</GNM>
+			<GTN>000071581</GTN>
+			<PAYPROC>Self</PAYPROC>
+			<SAMT>NA</SAMT>
+			<SCY>NA</SCY>
+			<COM>8.50</COM>
+			<GST>1.53</GST>
+			<ORDSTS>SUCCESS</ORDSTS>
+			<STSDES>Payment In Clearing</STSDES>
+			<PAYAMT>NA</PAYAMT>
+			<OD>2~2~2~10</OD>
+		</ORD>
+	</ORDD>
+	<SUMMDTLS>
+		<TORDCT>45</TORDCT>
+		<TORDAMT>77506.00</TORDAMT>
+		<TORDCY>INR</TORDCY>
+		<TREFCNT>0</TREFCNT>
+		<TREFAMT>0.00</TREFAMT>
+		<TREFCY>INR</TREFCY>
+	</SUMMDTLS>
+</SBIEPAY>

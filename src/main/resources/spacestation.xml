@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees s="s">
+	<employee id="EMP0001">
+		<first_name>John</first_name>
+		<last_name>Doe</last_name>
+		<age>26</age>
+	</employee>
+	<employee id="EMP0002">
+		<first_name>Peter</first_name>
+		<last_name>Parker</last_name>
+		<age>30</age>
+	</employee>
+	<gate>
+		<data id="EMP0002">
+			<first_name>Peter</first_name>
+			<last_name>Parker</last_name>
+			<age>30</age>
+		</data>
+		<data id="EMP0002">
+			<first_name>Peter</first_name>
+			<last_name>Parker</last_name>
+			<age>30</age>
+		</data>
+	</gate>
+</employees>
